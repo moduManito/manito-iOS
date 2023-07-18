@@ -9,25 +9,45 @@
 /* Begin PBXBuildFile section */
 		980BF8A32A5EC42B00ADE034 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980BF8A22A5EC42B00ADE034 /* AppDelegate.swift */; };
 		980BF8A52A5EC42B00ADE034 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980BF8A42A5EC42B00ADE034 /* SceneDelegate.swift */; };
-		980BF8A72A5EC42B00ADE034 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980BF8A62A5EC42B00ADE034 /* ViewController.swift */; };
+		980BF8A72A5EC42B00ADE034 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980BF8A62A5EC42B00ADE034 /* MainVC.swift */; };
 		980BF8AA2A5EC42B00ADE034 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 980BF8A82A5EC42B00ADE034 /* Main.storyboard */; };
 		980BF8AC2A5EC42C00ADE034 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 980BF8AB2A5EC42C00ADE034 /* Assets.xcassets */; };
 		980BF8AF2A5EC42C00ADE034 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 980BF8AD2A5EC42C00ADE034 /* LaunchScreen.storyboard */; };
 		980BF8C12A5EC4F400ADE034 /* Pretendard-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 980BF8BF2A5EC4F400ADE034 /* Pretendard-Bold.otf */; };
 		980BF8C22A5EC4F400ADE034 /* Pretendard-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 980BF8C02A5EC4F400ADE034 /* Pretendard-Regular.otf */; };
+		F18C1A962A6564C5000159A4 /* MyManitoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F18C1A952A6564C5000159A4 /* MyManitoCell.xib */; };
+		F18C1A9C2A657322000159A4 /* PaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18C1A9B2A657322000159A4 /* PaddingLabel.swift */; };
+		F18C1A9E2A65887B000159A4 /* MyManitoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18C1A9D2A65887B000159A4 /* MyManitoCell.swift */; };
+		F18C1AA22A661DA2000159A4 /* PaddingTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18C1AA12A661DA2000159A4 /* PaddingTextField.swift */; };
+		F1B0D25A2A6426390074F9FC /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1B0D2592A6426390074F9FC /* Login.storyboard */; };
+		F1B0D25C2A64266A0074F9FC /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B0D25B2A64266A0074F9FC /* LoginVC.swift */; };
+		F1C83C872A652D170090BA6B /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1C83C862A652D170090BA6B /* Home.storyboard */; };
+		F1C83C892A652D5C0090BA6B /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C83C882A652D5C0090BA6B /* HomeVC.swift */; };
+		F1C83C8B2A6530320090BA6B /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1C83C8A2A6530320090BA6B /* Setting.storyboard */; };
+		F1C83C8D2A65316F0090BA6B /* SettingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C83C8C2A65316F0090BA6B /* SettingVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		980BF89F2A5EC42B00ADE034 /* manito.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = manito.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		980BF8A22A5EC42B00ADE034 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		980BF8A42A5EC42B00ADE034 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		980BF8A62A5EC42B00ADE034 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		980BF8A62A5EC42B00ADE034 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		980BF8A92A5EC42B00ADE034 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		980BF8AB2A5EC42C00ADE034 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		980BF8AE2A5EC42C00ADE034 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		980BF8B02A5EC42C00ADE034 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		980BF8BF2A5EC4F400ADE034 /* Pretendard-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Bold.otf"; sourceTree = "<group>"; };
 		980BF8C02A5EC4F400ADE034 /* Pretendard-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Regular.otf"; sourceTree = "<group>"; };
+		F18C1A952A6564C5000159A4 /* MyManitoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyManitoCell.xib; sourceTree = "<group>"; };
+		F18C1A9B2A657322000159A4 /* PaddingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingLabel.swift; sourceTree = "<group>"; };
+		F18C1A9D2A65887B000159A4 /* MyManitoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyManitoCell.swift; sourceTree = "<group>"; };
+		F18C1AA12A661DA2000159A4 /* PaddingTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingTextField.swift; sourceTree = "<group>"; };
+		F1B0D2592A6426390074F9FC /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		F1B0D25B2A64266A0074F9FC /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		F1C83C862A652D170090BA6B /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		F1C83C882A652D5C0090BA6B /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		F1C83C8A2A6530320090BA6B /* Setting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Setting.storyboard; sourceTree = "<group>"; };
+		F1C83C8C2A65316F0090BA6B /* SettingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +103,7 @@
 		980BF8B72A5EC43B00ADE034 /* Soureces */ = {
 			isa = PBXGroup;
 			children = (
+				F18C1A9A2A6572E2000159A4 /* Custom */,
 				980BF8BE2A5EC4B200ADE034 /* Classes */,
 				980BF8BD2A5EC4AD00ADE034 /* Models */,
 				980BF8BC2A5EC49F00ADE034 /* Cells */,
@@ -105,6 +126,9 @@
 			children = (
 				980BF8A82A5EC42B00ADE034 /* Main.storyboard */,
 				980BF8AD2A5EC42C00ADE034 /* LaunchScreen.storyboard */,
+				F1B0D2592A6426390074F9FC /* Login.storyboard */,
+				F1C83C862A652D170090BA6B /* Home.storyboard */,
+				F1C83C8A2A6530320090BA6B /* Setting.storyboard */,
 			);
 			path = StoryBoards;
 			sourceTree = "<group>";
@@ -119,7 +143,10 @@
 		980BF8BB2A5EC49800ADE034 /* VCs */ = {
 			isa = PBXGroup;
 			children = (
-				980BF8A62A5EC42B00ADE034 /* ViewController.swift */,
+				980BF8A62A5EC42B00ADE034 /* MainVC.swift */,
+				F1B0D25B2A64266A0074F9FC /* LoginVC.swift */,
+				F1C83C882A652D5C0090BA6B /* HomeVC.swift */,
+				F1C83C8C2A65316F0090BA6B /* SettingVC.swift */,
 			);
 			path = VCs;
 			sourceTree = "<group>";
@@ -127,6 +154,7 @@
 		980BF8BC2A5EC49F00ADE034 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				F18C1A942A656470000159A4 /* TableViewCells */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -143,6 +171,24 @@
 			children = (
 			);
 			path = Classes;
+			sourceTree = "<group>";
+		};
+		F18C1A942A656470000159A4 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				F18C1A952A6564C5000159A4 /* MyManitoCell.xib */,
+				F18C1A9D2A65887B000159A4 /* MyManitoCell.swift */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		F18C1A9A2A6572E2000159A4 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				F18C1A9B2A657322000159A4 /* PaddingLabel.swift */,
+				F18C1AA12A661DA2000159A4 /* PaddingTextField.swift */,
+			);
+			path = Custom;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,11 +249,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1C83C872A652D170090BA6B /* Home.storyboard in Resources */,
 				980BF8AF2A5EC42C00ADE034 /* LaunchScreen.storyboard in Resources */,
 				980BF8C12A5EC4F400ADE034 /* Pretendard-Bold.otf in Resources */,
+				F1B0D25A2A6426390074F9FC /* Login.storyboard in Resources */,
 				980BF8C22A5EC4F400ADE034 /* Pretendard-Regular.otf in Resources */,
 				980BF8AC2A5EC42C00ADE034 /* Assets.xcassets in Resources */,
 				980BF8AA2A5EC42B00ADE034 /* Main.storyboard in Resources */,
+				F1C83C8B2A6530320090BA6B /* Setting.storyboard in Resources */,
+				F18C1A962A6564C5000159A4 /* MyManitoCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,9 +268,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				980BF8A72A5EC42B00ADE034 /* ViewController.swift in Sources */,
+				980BF8A72A5EC42B00ADE034 /* MainVC.swift in Sources */,
+				F18C1A9C2A657322000159A4 /* PaddingLabel.swift in Sources */,
+				F1C83C8D2A65316F0090BA6B /* SettingVC.swift in Sources */,
+				F18C1A9E2A65887B000159A4 /* MyManitoCell.swift in Sources */,
+				F1C83C892A652D5C0090BA6B /* HomeVC.swift in Sources */,
 				980BF8A32A5EC42B00ADE034 /* AppDelegate.swift in Sources */,
+				F1B0D25C2A64266A0074F9FC /* LoginVC.swift in Sources */,
 				980BF8A52A5EC42B00ADE034 /* SceneDelegate.swift in Sources */,
+				F18C1AA22A661DA2000159A4 /* PaddingTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,7 +352,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -350,7 +406,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
