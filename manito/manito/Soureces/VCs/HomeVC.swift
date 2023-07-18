@@ -19,6 +19,10 @@ class HomeVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     }
     
+    @IBAction func typeSelectButton(_ sender: UIButton) {
+        performSegue(withIdentifier: "ShowTypeSelect", sender: sender)
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 5
     }

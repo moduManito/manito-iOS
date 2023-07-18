@@ -19,6 +19,8 @@
 		F18C1A9C2A657322000159A4 /* PaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18C1A9B2A657322000159A4 /* PaddingLabel.swift */; };
 		F18C1A9E2A65887B000159A4 /* MyManitoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18C1A9D2A65887B000159A4 /* MyManitoCell.swift */; };
 		F18C1AA22A661DA2000159A4 /* PaddingTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18C1AA12A661DA2000159A4 /* PaddingTextField.swift */; };
+		F1A534152A66566100C4CA27 /* TypeSelect.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1A534142A66566100C4CA27 /* TypeSelect.storyboard */; };
+		F1A534172A66568500C4CA27 /* TypeSelectVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A534162A66568500C4CA27 /* TypeSelectVC.swift */; };
 		F1B0D25A2A6426390074F9FC /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1B0D2592A6426390074F9FC /* Login.storyboard */; };
 		F1B0D25C2A64266A0074F9FC /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B0D25B2A64266A0074F9FC /* LoginVC.swift */; };
 		F1C83C872A652D170090BA6B /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1C83C862A652D170090BA6B /* Home.storyboard */; };
@@ -42,6 +44,8 @@
 		F18C1A9B2A657322000159A4 /* PaddingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingLabel.swift; sourceTree = "<group>"; };
 		F18C1A9D2A65887B000159A4 /* MyManitoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyManitoCell.swift; sourceTree = "<group>"; };
 		F18C1AA12A661DA2000159A4 /* PaddingTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingTextField.swift; sourceTree = "<group>"; };
+		F1A534142A66566100C4CA27 /* TypeSelect.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TypeSelect.storyboard; sourceTree = "<group>"; };
+		F1A534162A66568500C4CA27 /* TypeSelectVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeSelectVC.swift; sourceTree = "<group>"; };
 		F1B0D2592A6426390074F9FC /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		F1B0D25B2A64266A0074F9FC /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		F1C83C862A652D170090BA6B /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
@@ -129,6 +133,7 @@
 				F1B0D2592A6426390074F9FC /* Login.storyboard */,
 				F1C83C862A652D170090BA6B /* Home.storyboard */,
 				F1C83C8A2A6530320090BA6B /* Setting.storyboard */,
+				F1A534142A66566100C4CA27 /* TypeSelect.storyboard */,
 			);
 			path = StoryBoards;
 			sourceTree = "<group>";
@@ -147,6 +152,7 @@
 				F1B0D25B2A64266A0074F9FC /* LoginVC.swift */,
 				F1C83C882A652D5C0090BA6B /* HomeVC.swift */,
 				F1C83C8C2A65316F0090BA6B /* SettingVC.swift */,
+				F1A534162A66568500C4CA27 /* TypeSelectVC.swift */,
 			);
 			path = VCs;
 			sourceTree = "<group>";
@@ -255,6 +261,7 @@
 				F1B0D25A2A6426390074F9FC /* Login.storyboard in Resources */,
 				980BF8C22A5EC4F400ADE034 /* Pretendard-Regular.otf in Resources */,
 				980BF8AC2A5EC42C00ADE034 /* Assets.xcassets in Resources */,
+				F1A534152A66566100C4CA27 /* TypeSelect.storyboard in Resources */,
 				980BF8AA2A5EC42B00ADE034 /* Main.storyboard in Resources */,
 				F1C83C8B2A6530320090BA6B /* Setting.storyboard in Resources */,
 				F18C1A962A6564C5000159A4 /* MyManitoCell.xib in Resources */,
@@ -272,6 +279,7 @@
 				F18C1A9C2A657322000159A4 /* PaddingLabel.swift in Sources */,
 				F1C83C8D2A65316F0090BA6B /* SettingVC.swift in Sources */,
 				F18C1A9E2A65887B000159A4 /* MyManitoCell.swift in Sources */,
+				F1A534172A66568500C4CA27 /* TypeSelectVC.swift in Sources */,
 				F1C83C892A652D5C0090BA6B /* HomeVC.swift in Sources */,
 				980BF8A32A5EC42B00ADE034 /* AppDelegate.swift in Sources */,
 				F1B0D25C2A64266A0074F9FC /* LoginVC.swift in Sources */,

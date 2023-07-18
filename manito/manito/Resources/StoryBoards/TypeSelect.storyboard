@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Pretendard-Bold.otf">
+            <string>Pretendard-Bold</string>
+        </array>
+        <array key="Pretendard-Regular.otf">
+            <string>Pretendard-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Type SelectVC-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="TypeSelectVC" hidesBottomBarWhenPushed="YES" id="Y6W-OH-hqX" customClass="TypeSelectVC" customModule="manito" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d2x-F1-qic">
+                                <rect key="frame" x="0.0" y="48" width="414" height="814"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8GC-E2-Zp2">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MatchingProgressBarImage1" translatesAutoresizingMaskIntoConstraints="NO" id="h5N-F5-tC3">
+                                                <rect key="frame" x="47.5" y="20" width="319" height="35"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Heart3dImage" translatesAutoresizingMaskIntoConstraints="NO" id="mUU-2V-HOp">
+                                                <rect key="frame" x="72" y="85" width="270" height="270"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Heart3dImageShadowImage" translatesAutoresizingMaskIntoConstraints="NO" id="EET-8e-Rb7">
+                                                <rect key="frame" x="114.5" y="362" width="185" height="24"/>
+                                            </imageView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="pSv-Qg-rYU">
+                                                <rect key="frame" x="36" y="416" width="214" height="158.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="두근 두근" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rJc-xF-qxy">
+                                                        <rect key="frame" x="0.0" y="0.0" width="214" height="57.5"/>
+                                                        <fontDescription key="fontDescription" name="Pretendard-Bold" family="Pretendard" pointSize="48"/>
+                                                        <color key="textColor" red="0.75294117650000003" green="0.18039215689999999" blue="0.12941176469999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="마니또" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SOs-WC-CQx">
+                                                        <rect key="frame" x="0.0" y="57.5" width="214" height="50.5"/>
+                                                        <fontDescription key="fontDescription" name="Pretendard-Bold" family="Pretendard" pointSize="42"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="매칭 결과를?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9bc-VZ-Ir6">
+                                                        <rect key="frame" x="0.0" y="108" width="214" height="50.5"/>
+                                                        <fontDescription key="fontDescription" name="Pretendard-Bold" family="Pretendard" pointSize="42"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="UZD-5N-zVz">
+                                                <rect key="frame" x="27" y="598.5" width="360" height="71"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R8c-9i-O7N">
+                                                        <rect key="frame" x="0.0" y="0.0" width="176" height="71"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="176" id="Nml-BF-vs5"/>
+                                                        </constraints>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" image="MatchingMailButtonImage"/>
+                                                        <buttonConfiguration key="configuration" style="plain" image="MatchingMailButtonImage"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lxs-Wn-vFK">
+                                                        <rect key="frame" x="184" y="0.0" width="176" height="71"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="176" id="TZO-FA-XNe"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" image="MatchingWithButtionImage"/>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="ZHb-so-6qS">
+                                                <rect key="frame" x="28" y="693.5" width="358" height="58"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="메일로 받아볼 시 지정한 공개일에 마니또와 마로의 관계가 메일로 발송됩니다." textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="67Q-th-1vz">
+                                                        <rect key="frame" x="0.0" y="0.0" width="358" height="36"/>
+                                                        <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="15"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="함께 알아가볼 시에는 오프라인으로 서로 알아갈 수 있습니다." textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QWk-Li-6RS">
+                                                        <rect key="frame" x="0.0" y="40" width="358" height="18"/>
+                                                        <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="15"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="pSv-Qg-rYU" firstAttribute="leading" secondItem="8GC-E2-Zp2" secondAttribute="leading" constant="36" id="4P0-Ne-yG0"/>
+                                            <constraint firstItem="mUU-2V-HOp" firstAttribute="centerX" secondItem="h5N-F5-tC3" secondAttribute="centerX" id="7Bc-ZC-dX1"/>
+                                            <constraint firstItem="ZHb-so-6qS" firstAttribute="top" secondItem="UZD-5N-zVz" secondAttribute="bottom" constant="24" id="8Up-Le-vfy"/>
+                                            <constraint firstItem="h5N-F5-tC3" firstAttribute="centerX" secondItem="8GC-E2-Zp2" secondAttribute="centerX" id="GC9-mh-eqi"/>
+                                            <constraint firstItem="UZD-5N-zVz" firstAttribute="centerX" secondItem="EET-8e-Rb7" secondAttribute="centerX" id="HGC-7d-8xj"/>
+                                            <constraint firstItem="h5N-F5-tC3" firstAttribute="top" secondItem="8GC-E2-Zp2" secondAttribute="top" constant="20" id="J4v-zX-XOx"/>
+                                            <constraint firstItem="ZHb-so-6qS" firstAttribute="centerX" secondItem="UZD-5N-zVz" secondAttribute="centerX" id="KvO-3E-F21"/>
+                                            <constraint firstItem="UZD-5N-zVz" firstAttribute="top" secondItem="pSv-Qg-rYU" secondAttribute="bottom" constant="24" id="Oa0-Yf-Fo9"/>
+                                            <constraint firstAttribute="trailing" secondItem="ZHb-so-6qS" secondAttribute="trailing" constant="28" id="ZeR-9o-Fqu"/>
+                                            <constraint firstItem="mUU-2V-HOp" firstAttribute="top" secondItem="h5N-F5-tC3" secondAttribute="bottom" constant="30" id="asn-bI-3d9"/>
+                                            <constraint firstItem="EET-8e-Rb7" firstAttribute="top" secondItem="mUU-2V-HOp" secondAttribute="bottom" constant="7" id="imO-nM-JdJ"/>
+                                            <constraint firstItem="ZHb-so-6qS" firstAttribute="leading" secondItem="8GC-E2-Zp2" secondAttribute="leading" constant="28" id="n3T-gp-G30"/>
+                                            <constraint firstItem="EET-8e-Rb7" firstAttribute="centerX" secondItem="mUU-2V-HOp" secondAttribute="centerX" id="oZm-Ec-dQy"/>
+                                            <constraint firstItem="pSv-Qg-rYU" firstAttribute="top" secondItem="EET-8e-Rb7" secondAttribute="bottom" constant="30" id="qlr-o8-chI"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="8GC-E2-Zp2" firstAttribute="top" secondItem="d2x-F1-qic" secondAttribute="top" id="P1f-e6-2Vt"/>
+                                    <constraint firstAttribute="bottom" secondItem="8GC-E2-Zp2" secondAttribute="bottom" id="g7Q-ss-bkr"/>
+                                    <constraint firstItem="8GC-E2-Zp2" firstAttribute="leading" secondItem="d2x-F1-qic" secondAttribute="leading" id="hSg-ap-6WD"/>
+                                    <constraint firstAttribute="trailing" secondItem="8GC-E2-Zp2" secondAttribute="trailing" id="qW1-Vb-1VF"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="d2x-F1-qic" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="344-2U-i6q"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="d2x-F1-qic" secondAttribute="bottom" id="8Uw-At-1ls"/>
+                            <constraint firstItem="d2x-F1-qic" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="97U-dC-RBh"/>
+                            <constraint firstItem="8GC-E2-Zp2" firstAttribute="height" secondItem="5EZ-qb-Rvc" secondAttribute="height" priority="250" id="EKt-wP-ZPD"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="d2x-F1-qic" secondAttribute="trailing" id="W1d-C9-YCY"/>
+                            <constraint firstItem="8GC-E2-Zp2" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" id="fpk-Eu-JKE"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="-34.151785714285715"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Heart3dImage" width="270" height="270"/>
+        <image name="Heart3dImageShadowImage" width="185" height="24"/>
+        <image name="MatchingMailButtonImage" width="169" height="57"/>
+        <image name="MatchingProgressBarImage1" width="319" height="35"/>
+        <image name="MatchingWithButtionImage" width="169" height="57"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
