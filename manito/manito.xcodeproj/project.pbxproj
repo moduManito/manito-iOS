@@ -114,7 +114,6 @@
 			isa = PBXGroup;
 			children = (
 				F1EFE8412A681DF300504716 /* Extensions */,
-				F18C1A9A2A6572E2000159A4 /* Custom */,
 				980BF8BE2A5EC4B200ADE034 /* Classes */,
 				980BF8BD2A5EC4AD00ADE034 /* Models */,
 				980BF8BC2A5EC49F00ADE034 /* Cells */,
@@ -184,6 +183,8 @@
 		980BF8BE2A5EC4B200ADE034 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				F18C1A9B2A657322000159A4 /* PaddingLabel.swift */,
+				F18C1AA12A661DA2000159A4 /* PaddingTextField.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -195,15 +196,6 @@
 				F18C1A9D2A65887B000159A4 /* MyManitoCell.swift */,
 			);
 			path = TableViewCells;
-			sourceTree = "<group>";
-		};
-		F18C1A9A2A6572E2000159A4 /* Custom */ = {
-			isa = PBXGroup;
-			children = (
-				F18C1A9B2A657322000159A4 /* PaddingLabel.swift */,
-				F18C1AA12A661DA2000159A4 /* PaddingTextField.swift */,
-			);
-			path = Custom;
 			sourceTree = "<group>";
 		};
 		F1EFE8412A681DF300504716 /* Extensions */ = {
