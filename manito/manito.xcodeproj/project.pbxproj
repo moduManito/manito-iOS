@@ -21,12 +21,15 @@
 		F18C1AA22A661DA2000159A4 /* PaddingTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18C1AA12A661DA2000159A4 /* PaddingTextField.swift */; };
 		F1A534152A66566100C4CA27 /* TypeSelect.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1A534142A66566100C4CA27 /* TypeSelect.storyboard */; };
 		F1A534172A66568500C4CA27 /* TypeSelectVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A534162A66568500C4CA27 /* TypeSelectVC.swift */; };
+		F1A5341B2A669D7800C4CA27 /* InputMailInfo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1A5341A2A669D7800C4CA27 /* InputMailInfo.storyboard */; };
+		F1A5341D2A669F1300C4CA27 /* InputIMailInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A5341C2A669F1300C4CA27 /* InputIMailInfoVC.swift */; };
 		F1B0D25A2A6426390074F9FC /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1B0D2592A6426390074F9FC /* Login.storyboard */; };
 		F1B0D25C2A64266A0074F9FC /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B0D25B2A64266A0074F9FC /* LoginVC.swift */; };
 		F1C83C872A652D170090BA6B /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1C83C862A652D170090BA6B /* Home.storyboard */; };
 		F1C83C892A652D5C0090BA6B /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C83C882A652D5C0090BA6B /* HomeVC.swift */; };
 		F1C83C8B2A6530320090BA6B /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1C83C8A2A6530320090BA6B /* Setting.storyboard */; };
 		F1C83C8D2A65316F0090BA6B /* SettingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C83C8C2A65316F0090BA6B /* SettingVC.swift */; };
+		F1EFE8432A681E1700504716 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EFE8422A681E1700504716 /* UIViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,12 +49,15 @@
 		F18C1AA12A661DA2000159A4 /* PaddingTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingTextField.swift; sourceTree = "<group>"; };
 		F1A534142A66566100C4CA27 /* TypeSelect.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TypeSelect.storyboard; sourceTree = "<group>"; };
 		F1A534162A66568500C4CA27 /* TypeSelectVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeSelectVC.swift; sourceTree = "<group>"; };
+		F1A5341A2A669D7800C4CA27 /* InputMailInfo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = InputMailInfo.storyboard; sourceTree = "<group>"; };
+		F1A5341C2A669F1300C4CA27 /* InputIMailInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputIMailInfoVC.swift; sourceTree = "<group>"; };
 		F1B0D2592A6426390074F9FC /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		F1B0D25B2A64266A0074F9FC /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		F1C83C862A652D170090BA6B /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		F1C83C882A652D5C0090BA6B /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		F1C83C8A2A6530320090BA6B /* Setting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Setting.storyboard; sourceTree = "<group>"; };
 		F1C83C8C2A65316F0090BA6B /* SettingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingVC.swift; sourceTree = "<group>"; };
+		F1EFE8422A681E1700504716 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +113,7 @@
 		980BF8B72A5EC43B00ADE034 /* Soureces */ = {
 			isa = PBXGroup;
 			children = (
+				F1EFE8412A681DF300504716 /* Extensions */,
 				F18C1A9A2A6572E2000159A4 /* Custom */,
 				980BF8BE2A5EC4B200ADE034 /* Classes */,
 				980BF8BD2A5EC4AD00ADE034 /* Models */,
@@ -134,6 +141,7 @@
 				F1C83C862A652D170090BA6B /* Home.storyboard */,
 				F1C83C8A2A6530320090BA6B /* Setting.storyboard */,
 				F1A534142A66566100C4CA27 /* TypeSelect.storyboard */,
+				F1A5341A2A669D7800C4CA27 /* InputMailInfo.storyboard */,
 			);
 			path = StoryBoards;
 			sourceTree = "<group>";
@@ -153,6 +161,7 @@
 				F1C83C882A652D5C0090BA6B /* HomeVC.swift */,
 				F1C83C8C2A65316F0090BA6B /* SettingVC.swift */,
 				F1A534162A66568500C4CA27 /* TypeSelectVC.swift */,
+				F1A5341C2A669F1300C4CA27 /* InputIMailInfoVC.swift */,
 			);
 			path = VCs;
 			sourceTree = "<group>";
@@ -195,6 +204,14 @@
 				F18C1AA12A661DA2000159A4 /* PaddingTextField.swift */,
 			);
 			path = Custom;
+			sourceTree = "<group>";
+		};
+		F1EFE8412A681DF300504716 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F1EFE8422A681E1700504716 /* UIViewController.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,6 +272,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1A5341B2A669D7800C4CA27 /* InputMailInfo.storyboard in Resources */,
 				F1C83C872A652D170090BA6B /* Home.storyboard in Resources */,
 				980BF8AF2A5EC42C00ADE034 /* LaunchScreen.storyboard in Resources */,
 				980BF8C12A5EC4F400ADE034 /* Pretendard-Bold.otf in Resources */,
@@ -277,6 +295,8 @@
 			files = (
 				980BF8A72A5EC42B00ADE034 /* MainVC.swift in Sources */,
 				F18C1A9C2A657322000159A4 /* PaddingLabel.swift in Sources */,
+				F1EFE8432A681E1700504716 /* UIViewController.swift in Sources */,
+				F1A5341D2A669F1300C4CA27 /* InputIMailInfoVC.swift in Sources */,
 				F1C83C8D2A65316F0090BA6B /* SettingVC.swift in Sources */,
 				F18C1A9E2A65887B000159A4 /* MyManitoCell.swift in Sources */,
 				F1A534172A66568500C4CA27 /* TypeSelectVC.swift in Sources */,
@@ -360,7 +380,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -414,7 +434,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -431,7 +451,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = Y2M459JK4X;
+				DEVELOPMENT_TEAM = 3GP97WXHSG;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = manito/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -444,7 +464,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.seochan99.manito;
+				PRODUCT_BUNDLE_IDENTIFIER = com.seochan999.manito;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -459,7 +479,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = Y2M459JK4X;
+				DEVELOPMENT_TEAM = 3GP97WXHSG;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = manito/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -472,7 +492,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.seochan99.manito;
+				PRODUCT_BUNDLE_IDENTIFIER = com.seochan999.manito;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
