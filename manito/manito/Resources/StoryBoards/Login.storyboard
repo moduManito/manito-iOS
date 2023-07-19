@@ -182,6 +182,7 @@
                                             </stackView>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <gestureRecognizers/>
                                         <constraints>
                                             <constraint firstItem="bXU-FR-AbW" firstAttribute="leading" secondItem="tcV-vO-vUq" secondAttribute="leading" id="3Pl-2H-HLx"/>
                                             <constraint firstItem="bXU-FR-AbW" firstAttribute="centerX" secondItem="tcV-vO-vUq" secondAttribute="centerX" id="Frx-9d-xKY"/>
@@ -198,6 +199,9 @@
                                             <constraint firstItem="PUT-fr-B8X" firstAttribute="top" secondItem="hG2-bI-edW" secondAttribute="top" constant="26" id="y2d-7E-kpY"/>
                                             <constraint firstItem="IuU-xv-rka" firstAttribute="centerX" secondItem="PUT-fr-B8X" secondAttribute="centerX" id="yQq-mV-qe9"/>
                                         </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="6Yt-SG-Voq" appends="YES" id="f8M-01-sm2"/>
+                                        </connections>
                                     </view>
                                 </subviews>
                                 <constraints>
@@ -225,6 +229,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="6Yt-SG-Voq">
+                    <connections>
+                        <action selector="tapBackgroundView:" destination="Y6W-OH-hqX" id="Rya-LP-fwp"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="131.8840579710145" y="-34.151785714285715"/>
         </scene>
