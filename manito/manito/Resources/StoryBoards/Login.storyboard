@@ -154,6 +154,7 @@
                                             </stackView>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <gestureRecognizers/>
                                         <constraints>
                                             <constraint firstItem="rcr-uP-yvx" firstAttribute="leading" secondItem="IuU-xv-rka" secondAttribute="trailing" constant="-47" id="0nZ-PR-ZfS"/>
                                             <constraint firstItem="IuU-xv-rka" firstAttribute="top" secondItem="sKC-Va-MM3" secondAttribute="bottom" constant="-73" id="Iy2-az-cbo"/>
@@ -175,6 +176,9 @@
                                             <constraint firstItem="IuU-xv-rka" firstAttribute="centerX" secondItem="PUT-fr-B8X" secondAttribute="centerX" id="yQq-mV-qe9"/>
                                             <constraint firstItem="sCc-Ky-t2y" firstAttribute="top" secondItem="rcr-uP-yvx" secondAttribute="bottom" constant="23" id="yap-yf-5RE"/>
                                         </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="6Yt-SG-Voq" appends="YES" id="f8M-01-sm2"/>
+                                        </connections>
                                     </view>
                                 </subviews>
                                 <constraints>
@@ -209,6 +213,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="6Yt-SG-Voq">
+                    <connections>
+                        <action selector="tapBackgroundView:" destination="Y6W-OH-hqX" id="Rya-LP-fwp"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="131.8840579710145" y="-34.151785714285715"/>
         </scene>
