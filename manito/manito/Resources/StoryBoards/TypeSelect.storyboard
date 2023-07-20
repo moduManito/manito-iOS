@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -30,13 +31,13 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8GC-E2-Zp2">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MatchingProgressBarImage1" translatesAutoresizingMaskIntoConstraints="NO" id="h5N-F5-tC3">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MatchingProgressBarImage1V1" translatesAutoresizingMaskIntoConstraints="NO" id="h5N-F5-tC3">
                                                 <rect key="frame" x="47.5" y="20" width="319" height="35"/>
                                             </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Heart3dImage" translatesAutoresizingMaskIntoConstraints="NO" id="mUU-2V-HOp">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Heart3dImageV1" translatesAutoresizingMaskIntoConstraints="NO" id="mUU-2V-HOp">
                                                 <rect key="frame" x="72" y="85" width="270" height="270"/>
                                             </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Heart3dImageShadowImage" translatesAutoresizingMaskIntoConstraints="NO" id="EET-8e-Rb7">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Heart3dImageShadowImageV1" translatesAutoresizingMaskIntoConstraints="NO" id="EET-8e-Rb7">
                                                 <rect key="frame" x="114.5" y="362" width="185" height="24"/>
                                             </imageView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="pSv-Qg-rYU">
@@ -72,7 +73,10 @@
                                                         </constraints>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal" image="MatchingMailButtonImage"/>
-                                                        <buttonConfiguration key="configuration" style="plain" image="MatchingMailButtonImage"/>
+                                                        <buttonConfiguration key="configuration" style="plain" image="MatchingMailButtonImageV1"/>
+                                                        <connections>
+                                                            <action selector="mailMatchingButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="0BD-D9-dmi"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lxs-Wn-vFK">
                                                         <rect key="frame" x="184" y="0.0" width="176" height="71"/>
@@ -80,7 +84,7 @@
                                                             <constraint firstAttribute="width" constant="176" id="TZO-FA-XNe"/>
                                                         </constraints>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain" image="MatchingWithButtionImage"/>
+                                                        <buttonConfiguration key="configuration" style="plain" image="MatchingWithButtionImageV1"/>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -140,18 +144,32 @@
                             <constraint firstItem="8GC-E2-Zp2" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" id="fpk-Eu-JKE"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <segue destination="zHl-3g-5pl" kind="show" identifier="ShowInputMail" animates="NO" id="V8o-oF-azn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="131.8840579710145" y="-34.151785714285715"/>
         </scene>
+        <!--InputMailInfoVC-->
+        <scene sceneID="SNa-cO-5fw">
+            <objects>
+                <viewControllerPlaceholder storyboardName="InputMailInfo" referencedIdentifier="InputMailInfoVC" id="zHl-3g-5pl" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="DWP-VD-mey"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nPC-wR-M8b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="853" y="7"/>
+        </scene>
     </scenes>
     <resources>
-        <image name="Heart3dImage" width="270" height="270"/>
-        <image name="Heart3dImageShadowImage" width="185" height="24"/>
+        <image name="Heart3dImageShadowImageV1" width="185" height="24"/>
+        <image name="Heart3dImageV1" width="270" height="270"/>
         <image name="MatchingMailButtonImage" width="169" height="57"/>
-        <image name="MatchingProgressBarImage1" width="319" height="35"/>
-        <image name="MatchingWithButtionImage" width="169" height="57"/>
+        <image name="MatchingMailButtonImageV1" width="169" height="57"/>
+        <image name="MatchingProgressBarImage1V1" width="319" height="35"/>
+        <image name="MatchingWithButtionImageV1" width="169" height="57"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

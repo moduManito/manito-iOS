@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7Y5-oR-u5p">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -41,7 +42,7 @@
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3CX-3h-6J2">
                                             <rect key="frame" x="1" y="51.5" width="412" height="242"/>
                                             <state key="normal" title="Button"/>
-                                            <buttonConfiguration key="configuration" style="plain" image="MatchingButtonImage"/>
+                                            <buttonConfiguration key="configuration" style="plain" image="MatchingButtonImageV1"/>
                                             <connections>
                                                 <action selector="typeSelectButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="9ye-Dw-xG1"/>
                                             </connections>
@@ -123,7 +124,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="MatchingButtonImage" width="388" height="228"/>
+        <image name="MatchingButtonImageV1" width="388" height="228"/>
         <image name="house.fill" catalog="system" width="128" height="104"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -47,7 +48,7 @@
                                                     </label>
                                                 </subviews>
                                             </stackView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LoginMainImage" translatesAutoresizingMaskIntoConstraints="NO" id="IuU-xv-rka">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LoginMainImageV1" translatesAutoresizingMaskIntoConstraints="NO" id="IuU-xv-rka">
                                                 <rect key="frame" x="87" y="110" width="240" height="240"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="IuU-xv-rka" secondAttribute="height" multiplier="1:1" id="DEo-Ix-IbJ"/>
@@ -181,6 +182,7 @@
                                             </stackView>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <gestureRecognizers/>
                                         <constraints>
                                             <constraint firstItem="bXU-FR-AbW" firstAttribute="leading" secondItem="tcV-vO-vUq" secondAttribute="leading" id="3Pl-2H-HLx"/>
                                             <constraint firstItem="bXU-FR-AbW" firstAttribute="centerX" secondItem="tcV-vO-vUq" secondAttribute="centerX" id="Frx-9d-xKY"/>
@@ -197,6 +199,9 @@
                                             <constraint firstItem="PUT-fr-B8X" firstAttribute="top" secondItem="hG2-bI-edW" secondAttribute="top" constant="26" id="y2d-7E-kpY"/>
                                             <constraint firstItem="IuU-xv-rka" firstAttribute="centerX" secondItem="PUT-fr-B8X" secondAttribute="centerX" id="yQq-mV-qe9"/>
                                         </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="6Yt-SG-Voq" appends="YES" id="f8M-01-sm2"/>
+                                        </connections>
                                     </view>
                                 </subviews>
                                 <constraints>
@@ -224,6 +229,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="6Yt-SG-Voq">
+                    <connections>
+                        <action selector="tapBackgroundView:" destination="Y6W-OH-hqX" id="Rya-LP-fwp"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="131.8840579710145" y="-34.151785714285715"/>
         </scene>
@@ -239,7 +249,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="LoginMainImage" width="276" height="241.5"/>
+        <image name="LoginMainImageV1" width="276" height="241.5"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
