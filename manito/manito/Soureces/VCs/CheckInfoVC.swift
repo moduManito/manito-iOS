@@ -14,7 +14,10 @@ class CheckInfoVC: UIViewController {
 
     @IBOutlet weak var infoView: UIView!
     @IBOutlet weak var infoStackView: UIStackView!
-    @IBOutlet weak var publicDatePicker: UIDatePicker!
+    @IBOutlet weak var publicDatePicker: UIDatePicker!    
+    @IBAction func editButton(_ sender: UIButton) {
+        self.navigationController?.popViewController(animated: true)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

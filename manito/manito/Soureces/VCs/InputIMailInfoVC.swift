@@ -16,6 +16,7 @@ class InputMailInfoVC: UIViewController {
     
     @IBAction func nextButton(_ sender: UIButton) {
         performSegue(withIdentifier: "ShowCheckInfo", sender: sender)
+        view.endEditing(true) // 다음 버튼 누르면 키보드 내림
     }
     
     @IBAction func tapBackgroundView(_ sender: Any) {
