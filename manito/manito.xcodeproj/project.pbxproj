@@ -15,6 +15,9 @@
 		980BF8AF2A5EC42C00ADE034 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 980BF8AD2A5EC42C00ADE034 /* LaunchScreen.storyboard */; };
 		980BF8C12A5EC4F400ADE034 /* Pretendard-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 980BF8BF2A5EC4F400ADE034 /* Pretendard-Bold.otf */; };
 		980BF8C22A5EC4F400ADE034 /* Pretendard-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 980BF8C02A5EC4F400ADE034 /* Pretendard-Regular.otf */; };
+		F10C8F4F2A6A7537004765D9 /* CheckInfo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F10C8F4E2A6A7537004765D9 /* CheckInfo.storyboard */; };
+		F10C8F512A6A7552004765D9 /* CheckInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10C8F502A6A7552004765D9 /* CheckInfoVC.swift */; };
+		F149DAD82A6D534000A904AE /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F149DAD72A6D533F00A904AE /* UIColor.swift */; };
 		F18C1A962A6564C5000159A4 /* MyManitoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F18C1A952A6564C5000159A4 /* MyManitoCell.xib */; };
 		F18C1A9C2A657322000159A4 /* PaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18C1A9B2A657322000159A4 /* PaddingLabel.swift */; };
 		F18C1A9E2A65887B000159A4 /* MyManitoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18C1A9D2A65887B000159A4 /* MyManitoCell.swift */; };
@@ -43,6 +46,9 @@
 		980BF8B02A5EC42C00ADE034 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		980BF8BF2A5EC4F400ADE034 /* Pretendard-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Bold.otf"; sourceTree = "<group>"; };
 		980BF8C02A5EC4F400ADE034 /* Pretendard-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Regular.otf"; sourceTree = "<group>"; };
+		F10C8F4E2A6A7537004765D9 /* CheckInfo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CheckInfo.storyboard; sourceTree = "<group>"; };
+		F10C8F502A6A7552004765D9 /* CheckInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckInfoVC.swift; sourceTree = "<group>"; };
+		F149DAD72A6D533F00A904AE /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		F18C1A952A6564C5000159A4 /* MyManitoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyManitoCell.xib; sourceTree = "<group>"; };
 		F18C1A9B2A657322000159A4 /* PaddingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingLabel.swift; sourceTree = "<group>"; };
 		F18C1A9D2A65887B000159A4 /* MyManitoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyManitoCell.swift; sourceTree = "<group>"; };
@@ -141,6 +147,7 @@
 				F1C83C8A2A6530320090BA6B /* Setting.storyboard */,
 				F1A534142A66566100C4CA27 /* TypeSelect.storyboard */,
 				F1A5341A2A669D7800C4CA27 /* InputMailInfo.storyboard */,
+				F10C8F4E2A6A7537004765D9 /* CheckInfo.storyboard */,
 			);
 			path = StoryBoards;
 			sourceTree = "<group>";
@@ -161,6 +168,7 @@
 				F1C83C8C2A65316F0090BA6B /* SettingVC.swift */,
 				F1A534162A66568500C4CA27 /* TypeSelectVC.swift */,
 				F1A5341C2A669F1300C4CA27 /* InputIMailInfoVC.swift */,
+				F10C8F502A6A7552004765D9 /* CheckInfoVC.swift */,
 			);
 			path = VCs;
 			sourceTree = "<group>";
@@ -202,6 +210,7 @@
 			isa = PBXGroup;
 			children = (
 				F1EFE8422A681E1700504716 /* UIViewController.swift */,
+				F149DAD72A6D533F00A904AE /* UIColor.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -265,6 +274,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1A5341B2A669D7800C4CA27 /* InputMailInfo.storyboard in Resources */,
+				F10C8F4F2A6A7537004765D9 /* CheckInfo.storyboard in Resources */,
 				F1C83C872A652D170090BA6B /* Home.storyboard in Resources */,
 				980BF8AF2A5EC42C00ADE034 /* LaunchScreen.storyboard in Resources */,
 				980BF8C12A5EC4F400ADE034 /* Pretendard-Bold.otf in Resources */,
@@ -286,12 +296,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				980BF8A72A5EC42B00ADE034 /* MainVC.swift in Sources */,
+				F149DAD82A6D534000A904AE /* UIColor.swift in Sources */,
 				F18C1A9C2A657322000159A4 /* PaddingLabel.swift in Sources */,
 				F1EFE8432A681E1700504716 /* UIViewController.swift in Sources */,
 				F1A5341D2A669F1300C4CA27 /* InputIMailInfoVC.swift in Sources */,
 				F1C83C8D2A65316F0090BA6B /* SettingVC.swift in Sources */,
 				F18C1A9E2A65887B000159A4 /* MyManitoCell.swift in Sources */,
 				F1A534172A66568500C4CA27 /* TypeSelectVC.swift in Sources */,
+				F10C8F512A6A7552004765D9 /* CheckInfoVC.swift in Sources */,
 				F1C83C892A652D5C0090BA6B /* HomeVC.swift in Sources */,
 				980BF8A32A5EC42B00ADE034 /* AppDelegate.swift in Sources */,
 				F1B0D25C2A64266A0074F9FC /* LoginVC.swift in Sources */,

@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Pretendard-Bold.otf">
+            <string>Pretendard-Bold</string>
+        </array>
+        <array key="Pretendard-Regular.otf">
+            <string>Pretendard-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Check InfoVC-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="CheckInfoVC" id="Y6W-OH-hqX" customClass="CheckInfoVC" customModule="manito" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MatchingProgressBarImage3V2" translatesAutoresizingMaskIntoConstraints="NO" id="3Yz-ss-0uz">
+                                <rect key="frame" x="47.5" y="68" width="319" height="35"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="메일로 받아볼래요." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K4X-T6-w1Z" customClass="PaddingLabel" customModule="manito" customModuleProvider="target">
+                                <rect key="frame" x="24" y="135" width="134" height="21.5"/>
+                                <color key="backgroundColor" red="0.38431372549999998" green="0.47450980390000003" blue="0.058823529409999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="topPadding">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="bottomPadding">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="rightPadding">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZVQ-hg-peD">
+                                <rect key="frame" x="24" y="173.5" width="191.5" height="100.5"/>
+                                <string key="text">아래 정보가
+맞을까요?</string>
+                                <fontDescription key="fontDescription" name="Pretendard-Bold" family="Pretendard" pointSize="42"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="48N-9M-4ql">
+                                <rect key="frame" x="17" y="304" width="380" height="47"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4my-vQ-A8H">
+                                        <rect key="frame" x="17" y="0.0" width="346" height="47"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="E3U-9B-TPv">
+                                                <rect key="frame" x="0.0" y="0.0" width="346" height="47"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gVP-2q-Ovs">
+                                                        <rect key="frame" x="0.0" y="0.0" width="346" height="46"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이름" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l2F-o1-sER">
+                                                                <rect key="frame" x="0.0" y="0.0" width="100" height="46"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="100" id="dqp-6S-qWx"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" name="Pretendard-Bold" family="Pretendard" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="이메일" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a2T-zz-lme">
+                                                                <rect key="frame" x="100" y="0.0" width="246" height="46"/>
+                                                                <fontDescription key="fontDescription" name="Pretendard-Bold" family="Pretendard" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="46" id="JXH-hv-EYA"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="372-rh-bNB">
+                                                        <rect key="frame" x="0.0" y="46" width="346" height="1"/>
+                                                        <color key="backgroundColor" red="0.89803921568627454" green="0.87058823529411766" blue="0.87450980392156863" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="1" id="kBK-L6-hzl"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.98039215686274506" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="E3U-9B-TPv" secondAttribute="bottom" id="dDh-kn-QzG"/>
+                                            <constraint firstItem="E3U-9B-TPv" firstAttribute="leading" secondItem="4my-vQ-A8H" secondAttribute="leading" id="gbo-lg-Led"/>
+                                            <constraint firstItem="E3U-9B-TPv" firstAttribute="top" secondItem="4my-vQ-A8H" secondAttribute="top" id="oT8-oe-zdM"/>
+                                            <constraint firstAttribute="trailing" secondItem="E3U-9B-TPv" secondAttribute="trailing" id="wh0-Z6-MMf"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.98039215686274506" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="4my-vQ-A8H" firstAttribute="top" secondItem="48N-9M-4ql" secondAttribute="top" id="2zb-wL-SEu"/>
+                                    <constraint firstItem="4my-vQ-A8H" firstAttribute="leading" secondItem="48N-9M-4ql" secondAttribute="leading" constant="17" id="ERm-GO-fSX"/>
+                                    <constraint firstAttribute="trailing" secondItem="4my-vQ-A8H" secondAttribute="trailing" constant="17" id="di4-Cz-ygk"/>
+                                    <constraint firstAttribute="bottom" secondItem="4my-vQ-A8H" secondAttribute="bottom" id="n0A-oL-Qnh"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="re1-wg-SZJ">
+                                <rect key="frame" x="24" y="381" width="366" height="159"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="oLu-kK-oW8">
+                                        <rect key="frame" x="0.0" y="0.0" width="366" height="72.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="공개일" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ot5-Pj-Nq6">
+                                                <rect key="frame" x="0.0" y="0.0" width="366" height="20.5"/>
+                                                <fontDescription key="fontDescription" name="Pretendard-Bold" family="Pretendard" pointSize="17"/>
+                                                <color key="textColor" red="0.4039215686" green="0.37647058820000001" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <datePicker userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="10" translatesAutoresizingMaskIntoConstraints="NO" id="pMu-DO-5VB">
+                                                <rect key="frame" x="0.0" y="24.5" width="366" height="48"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="48" id="CWs-jD-bKv"/>
+                                                </constraints>
+                                                <locale key="locale" localeIdentifier="ko_KR"/>
+                                            </datePicker>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="E2W-HI-ifx">
+                                        <rect key="frame" x="0.0" y="86.5" width="366" height="72.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="마니또 선물 금액" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gHr-AO-JE0">
+                                                <rect key="frame" x="0.0" y="0.0" width="366" height="20.5"/>
+                                                <fontDescription key="fontDescription" name="Pretendard-Bold" family="Pretendard" pointSize="17"/>
+                                                <color key="textColor" red="0.4039215686" green="0.37647058820000001" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pMK-SM-wvZ" customClass="PaddingTextField" customModule="manito" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="24.5" width="366" height="48"/>
+                                                <color key="backgroundColor" red="0.94901960780000005" green="0.92156862750000001" blue="0.87843137250000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="48" id="1bl-Rj-BxB"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="25"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingLeft">
+                                                        <real key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingRight">
+                                                        <real key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="94i-VK-e0m">
+                                <rect key="frame" x="27" y="571" width="360" height="71"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5VG-3X-I02">
+                                        <rect key="frame" x="0.0" y="0.0" width="176" height="71"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="176" id="6cl-9T-aMv"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="MatchingMailButtonImage"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="EditButtonImageV2"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Db-du-pUJ">
+                                        <rect key="frame" x="184" y="0.0" width="176" height="71"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="176" id="oza-6O-Y9P"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="SubmitButtonImageV2"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="K4X-T6-w1Z" firstAttribute="top" secondItem="3Yz-ss-0uz" secondAttribute="bottom" constant="32" id="3OQ-qh-Cxp"/>
+                            <constraint firstItem="3Yz-ss-0uz" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="6oj-lj-gOR"/>
+                            <constraint firstItem="94i-VK-e0m" firstAttribute="centerX" secondItem="re1-wg-SZJ" secondAttribute="centerX" id="AFc-We-rKG"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="48N-9M-4ql" secondAttribute="trailing" constant="17" id="AvV-yn-X4c"/>
+                            <constraint firstItem="re1-wg-SZJ" firstAttribute="leading" secondItem="ZVQ-hg-peD" secondAttribute="leading" id="BIt-gk-fAr"/>
+                            <constraint firstItem="48N-9M-4ql" firstAttribute="top" secondItem="ZVQ-hg-peD" secondAttribute="bottom" constant="30" id="E4p-Va-2hD"/>
+                            <constraint firstItem="K4X-T6-w1Z" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="24" id="F0F-Ui-vb6"/>
+                            <constraint firstItem="3Yz-ss-0uz" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="20" id="JGY-pg-bXg"/>
+                            <constraint firstItem="94i-VK-e0m" firstAttribute="top" secondItem="re1-wg-SZJ" secondAttribute="bottom" constant="31" id="XOo-yG-cS4"/>
+                            <constraint firstItem="re1-wg-SZJ" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="YEL-Zv-gNh"/>
+                            <constraint firstItem="ZVQ-hg-peD" firstAttribute="top" secondItem="K4X-T6-w1Z" secondAttribute="bottom" constant="17" id="Yfy-qs-Bsu"/>
+                            <constraint firstItem="48N-9M-4ql" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="17" id="jro-LT-Yek"/>
+                            <constraint firstItem="re1-wg-SZJ" firstAttribute="top" secondItem="48N-9M-4ql" secondAttribute="bottom" constant="30" id="wRI-SI-dzc"/>
+                            <constraint firstItem="ZVQ-hg-peD" firstAttribute="leading" secondItem="K4X-T6-w1Z" secondAttribute="leading" id="y1p-Wv-udu"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="infoStackView" destination="E3U-9B-TPv" id="5b4-rM-JGp"/>
+                        <outlet property="infoView" destination="48N-9M-4ql" id="iun-5n-EeG"/>
+                        <outlet property="publicDatePicker" destination="pMu-DO-5VB" id="u1u-lK-Qqf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-5.7971014492753632" y="-27.455357142857142"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="K4X-T6-w1Z">
+            <size key="intrinsicContentSize" width="134" height="21.5"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="EditButtonImageV2" width="159" height="57"/>
+        <image name="MatchingMailButtonImage" width="169" height="57"/>
+        <image name="MatchingProgressBarImage3V2" width="319" height="35"/>
+        <image name="SubmitButtonImageV2" width="159" height="57"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
