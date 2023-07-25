@@ -117,7 +117,7 @@
                                                                 <color key="textColor" red="0.4039215686" green="0.37647058820000001" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4Pp-R5-ZQj" customClass="PaddingTextField" customModule="manito" customModuleProvider="target">
+                                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="ex) jjanggu@naver.com, cheolsu@gmail.com, ..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4Pp-R5-ZQj" customClass="PaddingTextField" customModule="manito" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="24.5" width="366" height="48"/>
                                                                 <color key="backgroundColor" red="0.94901960784313721" green="0.92156862745098034" blue="0.8784313725490196" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <constraints>
@@ -149,7 +149,7 @@
                                                                 <color key="textColor" red="0.4039215686" green="0.37647058820000001" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LqS-fy-xOo" customClass="PaddingTextField" customModule="manito" customModuleProvider="target">
+                                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="ex) 신짱구, 김철수, ..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LqS-fy-xOo" customClass="PaddingTextField" customModule="manito" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="24.5" width="366" height="48"/>
                                                                 <color key="backgroundColor" red="0.94901960784313721" green="0.92156862745098034" blue="0.8784313725490196" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <constraints>
@@ -181,11 +181,12 @@
                                                                 <color key="textColor" red="0.4039215686" green="0.37647058820000001" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="t4e-KA-wzP">
+                                                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="10" translatesAutoresizingMaskIntoConstraints="NO" id="t4e-KA-wzP">
                                                                 <rect key="frame" x="0.0" y="24.5" width="366" height="48"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="48" id="Wez-5B-NUX"/>
                                                                 </constraints>
+                                                                <locale key="locale" localeIdentifier="ko_KR"/>
                                                             </datePicker>
                                                         </subviews>
                                                     </stackView>
@@ -198,27 +199,45 @@
                                                                 <color key="textColor" red="0.4039215686" green="0.37647058820000001" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Naz-Zz-odb" customClass="PaddingTextField" customModule="manito" customModuleProvider="target">
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E1o-3A-AYQ">
                                                                 <rect key="frame" x="0.0" y="24.5" width="366" height="48"/>
-                                                                <color key="backgroundColor" red="0.94901960784313721" green="0.92156862745098034" blue="0.8784313725490196" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <subviews>
+                                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Naz-Zz-odb" customClass="PaddingTextField" customModule="manito" customModuleProvider="target">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="366" height="48"/>
+                                                                        <color key="backgroundColor" red="0.94901960784313721" green="0.92156862745098034" blue="0.8784313725490196" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                                <integer key="value" value="25"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="paddingLeft">
+                                                                                <real key="value" value="20"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="paddingRight">
+                                                                                <real key="value" value="20"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                    </textField>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="원" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tpi-4S-TaX">
+                                                                        <rect key="frame" x="337" y="14" width="15" height="20.5"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="height" constant="48" id="S0v-Yu-vFs"/>
+                                                                    <constraint firstItem="Tpi-4S-TaX" firstAttribute="trailing" secondItem="Naz-Zz-odb" secondAttribute="trailing" constant="-14" id="02b-lo-Hil"/>
+                                                                    <constraint firstAttribute="height" constant="48" id="Ea6-7m-GQT"/>
+                                                                    <constraint firstItem="Naz-Zz-odb" firstAttribute="leading" secondItem="E1o-3A-AYQ" secondAttribute="leading" id="QrJ-ha-KG4"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="Naz-Zz-odb" secondAttribute="trailing" id="gg9-jv-ptY"/>
+                                                                    <constraint firstItem="Naz-Zz-odb" firstAttribute="top" secondItem="E1o-3A-AYQ" secondAttribute="top" id="jJz-wc-pUE"/>
+                                                                    <constraint firstItem="Tpi-4S-TaX" firstAttribute="centerY" secondItem="Naz-Zz-odb" secondAttribute="centerY" id="jcl-G6-xEv"/>
+                                                                    <constraint firstAttribute="bottom" secondItem="Naz-Zz-odb" secondAttribute="bottom" id="ylN-zy-KW4"/>
                                                                 </constraints>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
-                                                                <userDefinedRuntimeAttributes>
-                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
-                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                                        <integer key="value" value="25"/>
-                                                                    </userDefinedRuntimeAttribute>
-                                                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingLeft">
-                                                                        <real key="value" value="20"/>
-                                                                    </userDefinedRuntimeAttribute>
-                                                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingRight">
-                                                                        <real key="value" value="20"/>
-                                                                    </userDefinedRuntimeAttribute>
-                                                                </userDefinedRuntimeAttributes>
-                                                            </textField>
+                                                            </view>
                                                         </subviews>
                                                     </stackView>
                                                 </subviews>
@@ -295,6 +314,11 @@
                     </view>
                     <size key="freeformSize" width="414" height="1000"/>
                     <connections>
+                        <outlet property="emailDataTextField" destination="4Pp-R5-ZQj" id="FQa-vi-ZIA"/>
+                        <outlet property="giftAmountTextField" destination="Naz-Zz-odb" id="p8o-wf-XBn"/>
+                        <outlet property="meetingNameTextField" destination="pFW-HF-qad" id="L7y-lW-9dh"/>
+                        <outlet property="nameDataTextField" destination="LqS-fy-xOo" id="Ykl-Da-RKv"/>
+                        <outlet property="publicDatePicker" destination="t4e-KA-wzP" id="ZAT-yt-Y6C"/>
                         <segue destination="w85-jL-J5h" kind="show" identifier="ShowCheckInfo" id="dYm-4C-vxM"/>
                     </connections>
                 </viewController>

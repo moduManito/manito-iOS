@@ -9,12 +9,27 @@ import UIKit
 
 class CheckInfoVC: UIViewController {
     
-    let nameList:[String] = ["김길동", "이길동", "정길동", "장길동", "홍길동"]
-    let emailList:[String] = ["aaa@test.com", "bbb@test.com", "ccc@test.com", "ddd@test.com", "eee@test.com"]
+    var meetingName: String?
+    var emailData: String!
+    var nameData: String!
+    var publicDate: Date?
+    var giftAmount: String?
+    var nameList:[String] {
+        // string을 ',' 기준으로 나눠 리스트로 만들고, 각 요소의 앞뒤 공백을 지움
+        return nameData?.components(separatedBy: ",").map { $0.trimmingCharacters(in: .whitespaces) } ?? []
+    }
+    var emailList:[String] {
+        return emailData?.components(separatedBy: ",").map { $0.trimmingCharacters(in: .whitespaces) } ?? []
+    }
+    
 
+    // IBOutlet
     @IBOutlet weak var infoView: UIView!
     @IBOutlet weak var infoStackView: UIStackView!
-    @IBOutlet weak var publicDatePicker: UIDatePicker!    
+    @IBOutlet weak var publicDatePicker: UIDatePicker!
+    @IBOutlet weak var giftAmountTextField: PaddingTextField!
+    
+    // IBAction
     @IBAction func editButton(_ sender: UIButton) {
         self.navigationController?.popViewController(animated: true)
     }
@@ -40,7 +55,34 @@ class CheckInfoVC: UIViewController {
         
         // DatePicker 중앙으로 정렬
         publicDatePicker.contentHorizontalAlignment = .center
+        
+        // 공개 날짜 세팅
+        publicDatePicker.date = publicDate!
+        
+        // 선물 금액 세팅
+        // 3자리 마다 ','를 붙임
+        let numberString = giftAmount!
+        // Create a NumberFormatter instance
+        let numberFormatter = NumberFormatter()
+
+        // Set the number style to decimal
+        numberFormatter.numberStyle = .decimal
+
+        // Convert the string to a number (NSNumber)
+        if let number = numberFormatter.number(from: numberString) {
+            // Convert the number back to a formatted string with commas
+            if let formattedString = numberFormatter.string(from: number) {
+                print(formattedString) // Output: "1,000,000"
+                giftAmountTextField.text = formattedString + " 원"
+            }
+        }
     }
+    
+
+}
+
+
+extension CheckInfoVC {
     
     private func makePersonInfoStack(index: Int, name: String, email: String) -> UIStackView {
         // Create two UILabel instances
@@ -51,7 +93,7 @@ class CheckInfoVC: UIViewController {
         let emailLabel = UILabel()
         emailLabel.text = email
         emailLabel.textAlignment = .center
-        emailLabel.setContentHuggingPriority(UILayoutPriority(250), for: .horizontal)
+        emailLabel.setContentHuggingPriority(UILayoutPriority(250), for: .horizontal) // stack view에서 차지하는 공간 우선순위 설정
         
         // Create a width constraint for the label
         let widthConstraint = NSLayoutConstraint(
@@ -101,5 +143,5 @@ class CheckInfoVC: UIViewController {
 
         return stackView
     }
-
+    
 }
