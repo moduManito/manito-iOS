@@ -18,7 +18,7 @@
         </array>
     </customFonts>
     <scenes>
-        <!--Home-->
+        <!--모두의 마니또-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
                 <viewController storyboardIdentifier="HomeVC" id="Y6W-OH-hqX" customClass="HomeVC" customModule="manito" customModuleProvider="target" sceneMemberID="viewController">
@@ -82,16 +82,33 @@
                     <tabBarItem key="tabBarItem" title="Home" id="uMF-cO-ykc">
                         <imageReference key="image" image="house.fill" catalog="system"/>
                     </tabBarItem>
-                    <navigationItem key="navigationItem" id="3T8-27-ZXb"/>
+                    <navigationItem key="navigationItem" title="모두의 마니또" id="3T8-27-ZXb">
+                        <barButtonItem key="rightBarButtonItem" title="로그인" id="k53-Rg-NyQ">
+                            <connections>
+                                <action selector="loginBarButton:" destination="Y6W-OH-hqX" id="YMu-CW-Rm2"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="myManitoTableView" destination="unD-ff-7tP" id="8v6-Xl-dBH"/>
                         <segue destination="CXx-re-3Zy" kind="show" identifier="ShowTypeSelect" id="lHZ-Fv-nbR"/>
+                        <segue destination="HV8-Gc-Hrj" kind="show" identifier="ShowLogin" id="sow-Gt-0En"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="991.304347826087" y="3.3482142857142856"/>
+        </scene>
+        <!--LoginVC-->
+        <scene sceneID="dMG-w2-Frq">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Login" referencedIdentifier="LoginVC" id="HV8-Gc-Hrj" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="UGt-Jo-bbB"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bDi-Ud-AE7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1564" y="-249"/>
         </scene>
         <!--TypeSelectVC-->
         <scene sceneID="mta-il-cgs">

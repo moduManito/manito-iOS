@@ -145,7 +145,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <segue destination="zHl-3g-5pl" kind="show" identifier="ShowInputMail" animates="NO" id="V8o-oF-azn"/>
+                        <segue destination="zHl-3g-5pl" kind="show" identifier="ShowInputMail" id="V8o-oF-azn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
