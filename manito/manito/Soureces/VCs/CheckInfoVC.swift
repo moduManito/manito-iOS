@@ -28,6 +28,7 @@ class CheckInfoVC: UIViewController {
     @IBOutlet weak var infoStackView: UIStackView!
     @IBOutlet weak var publicDatePicker: UIDatePicker!
     @IBOutlet weak var giftAmountTextField: PaddingTextField!
+    @IBOutlet weak var publicStackView: UIStackView!
     
     // IBAction
     @IBAction func editButton(_ sender: UIButton) {
@@ -61,7 +62,15 @@ class CheckInfoVC: UIViewController {
         publicDatePicker.contentHorizontalAlignment = .center
         
         // 공개 날짜 세팅
-        publicDatePicker.date = publicDate!
+//        publicDatePicker.date = publicDate!
+        if let date = publicDate {
+            // If publicDate is not nil, show the stackView
+            publicStackView.isHidden = false
+            publicDatePicker.date = date
+        } else {
+            // If publicDate is nil, hide the stackView
+            publicStackView.isHidden = true
+        }
         
         // 선물 금액 세팅
         // 3자리 마다 ','를 붙임

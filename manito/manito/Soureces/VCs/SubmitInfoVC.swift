@@ -25,6 +25,16 @@ class SubmitInfoVC: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        // 뷰 컨트롤러가 나타날 때 NavBar 숨기기
+        navigationController?.setNavigationBarHidden(true, animated: true)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        // 뷰 컨트롤러가 사라질 때 NavBar 나타내기
+        navigationController?.setNavigationBarHidden(false, animated: true)
+    }
+    
     private func updateUI() {
         createdMamitoCountLabel.text = "\(createdManitoCount ?? 0)명"
     }

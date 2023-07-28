@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Pretendard-Bold.otf">
+            <string>Pretendard-Bold</string>
+        </array>
+        <array key="Pretendard-Regular.otf">
+            <string>Pretendard-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Input Together InfoVC-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="InputTogetherInfoVC" id="Y6W-OH-hqX" customClass="InputTogetherInfoVC" customModule="manito" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VLu-tM-ZlQ">
+                                <rect key="frame" x="0.0" y="48" width="414" height="814"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gfP-b4-lga">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MatchingProgressBarImage2V2" translatesAutoresizingMaskIntoConstraints="NO" id="8Pg-qP-dG2">
+                                                <rect key="frame" x="47.5" y="20" width="319" height="35"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="메일로 받아볼래요." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EVr-lM-96k" customClass="PaddingLabel" customModule="manito" customModuleProvider="target">
+                                                <rect key="frame" x="24" y="87" width="134" height="21.5"/>
+                                                <color key="backgroundColor" red="0.38431372549999998" green="0.47450980390000003" blue="0.058823529409999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="18"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="topPadding">
+                                                        <real key="value" value="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="bottomPadding">
+                                                        <real key="value" value="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="rightPadding">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yyn-WH-7QS">
+                                                <rect key="frame" x="24" y="125.5" width="231" height="100.5"/>
+                                                <string key="text">정보를
+입력해주세요!</string>
+                                                <fontDescription key="fontDescription" name="Pretendard-Bold" family="Pretendard" pointSize="42"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="참가자의 메일과 이름 순서를 동일하게 입력해 주세요!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XgL-Na-3Cz">
+                                                <rect key="frame" x="24" y="242" width="312" height="18"/>
+                                                <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="15"/>
+                                                <color key="textColor" red="0.4039215686" green="0.37647058820000001" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="okn-ay-eac">
+                                                <rect key="frame" x="24" y="298" width="366" height="332"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="6Pt-ro-6Kv">
+                                                        <rect key="frame" x="0.0" y="0.0" width="366" height="72.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="모임명을 알려주세요." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Zm-4C-BjY">
+                                                                <rect key="frame" x="0.0" y="0.0" width="366" height="20.5"/>
+                                                                <fontDescription key="fontDescription" name="Pretendard-Bold" family="Pretendard" pointSize="17"/>
+                                                                <color key="textColor" red="0.4039215686" green="0.37647058820000001" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="e9p-2R-gW6" customClass="PaddingTextField" customModule="manito" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="24.5" width="366" height="48"/>
+                                                                <color key="backgroundColor" red="0.94901960780000005" green="0.92156862750000001" blue="0.87843137250000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="48" id="OPh-eI-Xki"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="25"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingLeft">
+                                                                        <real key="value" value="20"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingRight">
+                                                                        <real key="value" value="20"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </textField>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="669-OX-h2U">
+                                                        <rect key="frame" x="0.0" y="86.5" width="366" height="72.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="참가자의 메일을 알려주세요." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MNS-Fx-WIy">
+                                                                <rect key="frame" x="0.0" y="0.0" width="366" height="20.5"/>
+                                                                <fontDescription key="fontDescription" name="Pretendard-Bold" family="Pretendard" pointSize="17"/>
+                                                                <color key="textColor" red="0.4039215686" green="0.37647058820000001" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="ex) jjanggu@naver.com, cheolsu@gmail.com, ..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xgz-5H-uGt" customClass="PaddingTextField" customModule="manito" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="24.5" width="366" height="48"/>
+                                                                <color key="backgroundColor" red="0.94901960780000005" green="0.92156862750000001" blue="0.87843137250000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="48" id="apy-TG-Cfu"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="25"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingLeft">
+                                                                        <real key="value" value="20"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingRight">
+                                                                        <real key="value" value="20"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </textField>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="j8z-xm-4yX">
+                                                        <rect key="frame" x="0.0" y="173" width="366" height="72.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="참가자의 이름을 알려주세요." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1tv-Nh-ds8">
+                                                                <rect key="frame" x="0.0" y="0.0" width="366" height="20.5"/>
+                                                                <fontDescription key="fontDescription" name="Pretendard-Bold" family="Pretendard" pointSize="17"/>
+                                                                <color key="textColor" red="0.4039215686" green="0.37647058820000001" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="ex) 신짱구, 김철수, ..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vnu-z3-b3f" customClass="PaddingTextField" customModule="manito" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="24.5" width="366" height="48"/>
+                                                                <color key="backgroundColor" red="0.94901960780000005" green="0.92156862750000001" blue="0.87843137250000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="48" id="Qgt-ER-sHi"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="25"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingLeft">
+                                                                        <real key="value" value="20"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingRight">
+                                                                        <real key="value" value="20"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </textField>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Gk0-Gc-XGR">
+                                                        <rect key="frame" x="0.0" y="259.5" width="366" height="72.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="마니또 선물 금액을 알려주세요." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RFE-TK-RKw">
+                                                                <rect key="frame" x="0.0" y="0.0" width="366" height="20.5"/>
+                                                                <fontDescription key="fontDescription" name="Pretendard-Bold" family="Pretendard" pointSize="17"/>
+                                                                <color key="textColor" red="0.4039215686" green="0.37647058820000001" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aJw-OK-iRV">
+                                                                <rect key="frame" x="0.0" y="24.5" width="366" height="48"/>
+                                                                <subviews>
+                                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VRz-Ob-PeE" customClass="PaddingTextField" customModule="manito" customModuleProvider="target">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="366" height="48"/>
+                                                                        <color key="backgroundColor" red="0.94901960780000005" green="0.92156862750000001" blue="0.87843137250000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                                <integer key="value" value="25"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="paddingLeft">
+                                                                                <real key="value" value="20"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="paddingRight">
+                                                                                <real key="value" value="20"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                    </textField>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="원" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xDe-sp-X5z">
+                                                                        <rect key="frame" x="337" y="14" width="15" height="20.5"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                <constraints>
+                                                                    <constraint firstItem="xDe-sp-X5z" firstAttribute="centerY" secondItem="VRz-Ob-PeE" secondAttribute="centerY" id="Ju8-FW-IoI"/>
+                                                                    <constraint firstItem="xDe-sp-X5z" firstAttribute="trailing" secondItem="VRz-Ob-PeE" secondAttribute="trailing" constant="-14" id="T5A-ic-5h4"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="VRz-Ob-PeE" secondAttribute="trailing" id="bDd-pJ-s5W"/>
+                                                                    <constraint firstItem="VRz-Ob-PeE" firstAttribute="leading" secondItem="aJw-OK-iRV" secondAttribute="leading" id="dtm-VH-gSW"/>
+                                                                    <constraint firstAttribute="bottom" secondItem="VRz-Ob-PeE" secondAttribute="bottom" id="ozr-Nb-ewt"/>
+                                                                    <constraint firstAttribute="height" constant="48" id="qra-QG-ghz"/>
+                                                                    <constraint firstItem="VRz-Ob-PeE" firstAttribute="top" secondItem="aJw-OK-iRV" secondAttribute="top" id="rJT-Ro-aPc"/>
+                                                                </constraints>
+                                                            </view>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tMF-TJ-ruY">
+                                                <rect key="frame" x="24" y="679.5" width="366" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="pgg-ws-X3f"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="다음으로">
+                                                            <attributes>
+                                                                <font key="NSFont" size="24" name="AppleSDGothicNeo-Bold"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                    <color key="baseBackgroundColor" red="0.38431372549999998" green="0.47450980390000003" blue="0.058823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                </buttonConfiguration>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="25"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="nextButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="UxO-NH-Npq"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstItem="okn-ay-eac" firstAttribute="leading" secondItem="XgL-Na-3Cz" secondAttribute="leading" id="3vW-nG-r8I"/>
+                                            <constraint firstItem="okn-ay-eac" firstAttribute="centerX" secondItem="8Pg-qP-dG2" secondAttribute="centerX" id="7w3-EI-8NC"/>
+                                            <constraint firstItem="8Pg-qP-dG2" firstAttribute="top" secondItem="gfP-b4-lga" secondAttribute="top" constant="20" id="8q9-87-xzy"/>
+                                            <constraint firstItem="XgL-Na-3Cz" firstAttribute="leading" secondItem="Yyn-WH-7QS" secondAttribute="leading" id="BMg-qQ-boX"/>
+                                            <constraint firstItem="okn-ay-eac" firstAttribute="top" secondItem="XgL-Na-3Cz" secondAttribute="bottom" constant="38" id="PV2-Qg-UgP"/>
+                                            <constraint firstItem="tMF-TJ-ruY" firstAttribute="leading" secondItem="okn-ay-eac" secondAttribute="leading" id="V8N-Fk-LQO"/>
+                                            <constraint firstItem="XgL-Na-3Cz" firstAttribute="top" secondItem="Yyn-WH-7QS" secondAttribute="bottom" constant="16" id="Ybh-wf-uI5"/>
+                                            <constraint firstItem="tMF-TJ-ruY" firstAttribute="top" secondItem="okn-ay-eac" secondAttribute="bottom" constant="49.5" id="aM8-R0-74B"/>
+                                            <constraint firstItem="EVr-lM-96k" firstAttribute="top" secondItem="8Pg-qP-dG2" secondAttribute="bottom" constant="32" id="an8-kW-zo2"/>
+                                            <constraint firstItem="8Pg-qP-dG2" firstAttribute="centerX" secondItem="gfP-b4-lga" secondAttribute="centerX" id="g03-22-X7r"/>
+                                            <constraint firstItem="Yyn-WH-7QS" firstAttribute="top" secondItem="EVr-lM-96k" secondAttribute="bottom" constant="17" id="kqR-pw-728"/>
+                                            <constraint firstItem="Yyn-WH-7QS" firstAttribute="leading" secondItem="EVr-lM-96k" secondAttribute="leading" id="p1i-MI-mwm"/>
+                                            <constraint firstItem="EVr-lM-96k" firstAttribute="leading" secondItem="gfP-b4-lga" secondAttribute="leading" constant="24" id="vaV-Ul-JQH"/>
+                                            <constraint firstItem="tMF-TJ-ruY" firstAttribute="centerX" secondItem="okn-ay-eac" secondAttribute="centerX" id="xkF-P0-Dq9"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="gfP-b4-lga" firstAttribute="top" secondItem="VLu-tM-ZlQ" secondAttribute="top" id="BGu-hR-bwE"/>
+                                    <constraint firstAttribute="bottom" secondItem="gfP-b4-lga" secondAttribute="bottom" id="GaX-OF-kFW"/>
+                                    <constraint firstItem="gfP-b4-lga" firstAttribute="leading" secondItem="VLu-tM-ZlQ" secondAttribute="leading" id="iV0-S4-WZv"/>
+                                    <constraint firstAttribute="trailing" secondItem="gfP-b4-lga" secondAttribute="trailing" id="ph9-t7-xOM"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="top" secondItem="VLu-tM-ZlQ" secondAttribute="top" id="Fdj-jL-m2c"/>
+                            <constraint firstItem="gfP-b4-lga" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" id="TDZ-B7-iQk"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="VLu-tM-ZlQ" secondAttribute="trailing" id="bFb-y1-s8C"/>
+                            <constraint firstItem="VLu-tM-ZlQ" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="csP-Kx-btU"/>
+                            <constraint firstItem="VLu-tM-ZlQ" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="dU0-SO-6Ok"/>
+                            <constraint firstItem="gfP-b4-lga" firstAttribute="height" secondItem="5EZ-qb-Rvc" secondAttribute="height" priority="250" id="tkO-BC-rXd"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="AXz-Zf-HyU" appends="YES" id="TFR-xN-9cF"/>
+                        </connections>
+                    </view>
+                    <size key="freeformSize" width="414" height="896"/>
+                    <connections>
+                        <outlet property="emailDataTextField" destination="Xgz-5H-uGt" id="5lM-kg-EbX"/>
+                        <outlet property="giftAmountTextField" destination="VRz-Ob-PeE" id="fdT-Fx-YA3"/>
+                        <outlet property="meetingNameTextField" destination="e9p-2R-gW6" id="D3u-OS-2po"/>
+                        <outlet property="nameDataTextField" destination="vnu-z3-b3f" id="cMn-P4-wS0"/>
+                        <segue destination="a0y-f3-O4X" kind="show" identifier="ShowCheckInfo" id="hTs-4h-7lr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="AXz-Zf-HyU">
+                    <connections>
+                        <action selector="tapBackgroundView:" destination="Y6W-OH-hqX" id="RqE-Yx-e0J"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="132" y="-34"/>
+        </scene>
+        <!--CheckInfoVC-->
+        <scene sceneID="Add-of-5vY">
+            <objects>
+                <viewControllerPlaceholder storyboardName="CheckInfo" referencedIdentifier="CheckInfoVC" id="a0y-f3-O4X" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="4lo-sd-ypK"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="had-3m-29s" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="727" y="-34"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="EVr-lM-96k">
+            <size key="intrinsicContentSize" width="134" height="21.5"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="MatchingProgressBarImage2V2" width="319" height="35"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

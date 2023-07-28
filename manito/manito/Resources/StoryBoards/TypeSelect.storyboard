@@ -85,6 +85,9 @@
                                                         </constraints>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" image="MatchingWithButtionImageV1"/>
+                                                        <connections>
+                                                            <action selector="togetherMatchingButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="LbG-9N-pny"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -146,6 +149,7 @@
                     </view>
                     <connections>
                         <segue destination="zHl-3g-5pl" kind="show" identifier="ShowInputMail" id="V8o-oF-azn"/>
+                        <segue destination="T2Z-rj-Mi1" kind="show" identifier="ShowInputTogether" id="bOs-yA-gbP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -161,6 +165,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nPC-wR-M8b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="853" y="7"/>
+        </scene>
+        <!--InputTogetherInfoVC-->
+        <scene sceneID="b8d-B8-BxT">
+            <objects>
+                <viewControllerPlaceholder storyboardName="InputTogetherInfo" referencedIdentifier="InputTogetherInfoVC" id="T2Z-rj-Mi1" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="WSR-BP-PHY"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nhO-2C-MFS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="814" y="90"/>
         </scene>
     </scenes>
     <resources>

@@ -19,6 +19,7 @@
 		F10C8F512A6A7552004765D9 /* CheckInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10C8F502A6A7552004765D9 /* CheckInfoVC.swift */; };
 		F10E66F52A73E5170054B604 /* SubmitInfo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F10E66F42A73E5170054B604 /* SubmitInfo.storyboard */; };
 		F10E66F72A73E5380054B604 /* SubmitInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10E66F62A73E5380054B604 /* SubmitInfoVC.swift */; };
+		F146DD692A7407700044309D /* InputTogetherInfo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F146DD682A7407700044309D /* InputTogetherInfo.storyboard */; };
 		F149DAD82A6D534000A904AE /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F149DAD72A6D533F00A904AE /* UIColor.swift */; };
 		F18C1A962A6564C5000159A4 /* MyManitoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F18C1A952A6564C5000159A4 /* MyManitoCell.xib */; };
 		F18C1A9C2A657322000159A4 /* PaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18C1A9B2A657322000159A4 /* PaddingLabel.swift */; };
@@ -34,6 +35,7 @@
 		F1C83C892A652D5C0090BA6B /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C83C882A652D5C0090BA6B /* HomeVC.swift */; };
 		F1C83C8B2A6530320090BA6B /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1C83C8A2A6530320090BA6B /* Setting.storyboard */; };
 		F1C83C8D2A65316F0090BA6B /* SettingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C83C8C2A65316F0090BA6B /* SettingVC.swift */; };
+		F1CFF65F2A73FC410087A8A8 /* InputTogetherInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CFF65E2A73FC410087A8A8 /* InputTogetherInfoVC.swift */; };
 		F1EFE8432A681E1700504716 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EFE8422A681E1700504716 /* UIViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +54,7 @@
 		F10C8F502A6A7552004765D9 /* CheckInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckInfoVC.swift; sourceTree = "<group>"; };
 		F10E66F42A73E5170054B604 /* SubmitInfo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SubmitInfo.storyboard; sourceTree = "<group>"; };
 		F10E66F62A73E5380054B604 /* SubmitInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitInfoVC.swift; sourceTree = "<group>"; };
+		F146DD682A7407700044309D /* InputTogetherInfo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = InputTogetherInfo.storyboard; sourceTree = "<group>"; };
 		F149DAD72A6D533F00A904AE /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		F18C1A952A6564C5000159A4 /* MyManitoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyManitoCell.xib; sourceTree = "<group>"; };
 		F18C1A9B2A657322000159A4 /* PaddingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingLabel.swift; sourceTree = "<group>"; };
@@ -67,6 +70,7 @@
 		F1C83C882A652D5C0090BA6B /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		F1C83C8A2A6530320090BA6B /* Setting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Setting.storyboard; sourceTree = "<group>"; };
 		F1C83C8C2A65316F0090BA6B /* SettingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingVC.swift; sourceTree = "<group>"; };
+		F1CFF65E2A73FC410087A8A8 /* InputTogetherInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputTogetherInfoVC.swift; sourceTree = "<group>"; };
 		F1EFE8422A681E1700504716 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -151,6 +155,7 @@
 				F1C83C8A2A6530320090BA6B /* Setting.storyboard */,
 				F1A534142A66566100C4CA27 /* TypeSelect.storyboard */,
 				F1A5341A2A669D7800C4CA27 /* InputMailInfo.storyboard */,
+				F146DD682A7407700044309D /* InputTogetherInfo.storyboard */,
 				F10C8F4E2A6A7537004765D9 /* CheckInfo.storyboard */,
 				F10E66F42A73E5170054B604 /* SubmitInfo.storyboard */,
 			);
@@ -173,6 +178,7 @@
 				F1C83C8C2A65316F0090BA6B /* SettingVC.swift */,
 				F1A534162A66568500C4CA27 /* TypeSelectVC.swift */,
 				F1A5341C2A669F1300C4CA27 /* InputIMailInfoVC.swift */,
+				F1CFF65E2A73FC410087A8A8 /* InputTogetherInfoVC.swift */,
 				F10C8F502A6A7552004765D9 /* CheckInfoVC.swift */,
 				F10E66F62A73E5380054B604 /* SubmitInfoVC.swift */,
 			);
@@ -288,6 +294,7 @@
 				F10E66F52A73E5170054B604 /* SubmitInfo.storyboard in Resources */,
 				980BF8C22A5EC4F400ADE034 /* Pretendard-Regular.otf in Resources */,
 				980BF8AC2A5EC42C00ADE034 /* Assets.xcassets in Resources */,
+				F146DD692A7407700044309D /* InputTogetherInfo.storyboard in Resources */,
 				F1A534152A66566100C4CA27 /* TypeSelect.storyboard in Resources */,
 				980BF8AA2A5EC42B00ADE034 /* Main.storyboard in Resources */,
 				F1C83C8B2A6530320090BA6B /* Setting.storyboard in Resources */,
@@ -313,6 +320,7 @@
 				F10E66F72A73E5380054B604 /* SubmitInfoVC.swift in Sources */,
 				F10C8F512A6A7552004765D9 /* CheckInfoVC.swift in Sources */,
 				F1C83C892A652D5C0090BA6B /* HomeVC.swift in Sources */,
+				F1CFF65F2A73FC410087A8A8 /* InputTogetherInfoVC.swift in Sources */,
 				980BF8A32A5EC42B00ADE034 /* AppDelegate.swift in Sources */,
 				F1B0D25C2A64266A0074F9FC /* LoginVC.swift in Sources */,
 				980BF8A52A5EC42B00ADE034 /* SceneDelegate.swift in Sources */,
