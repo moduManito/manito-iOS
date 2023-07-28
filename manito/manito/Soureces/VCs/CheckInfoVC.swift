@@ -34,6 +34,10 @@ class CheckInfoVC: UIViewController {
         self.navigationController?.popViewController(animated: true)
     }
     
+    @IBAction func submitButton(_ sender: Any) {
+        performSegue(withIdentifier: "ShowSubmitInfo", sender: sender)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         updateUI()
@@ -77,6 +81,16 @@ class CheckInfoVC: UIViewController {
             }
         }
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+            if segue.identifier == "ShowSubmitInfo" {
+                // Get a reference to the destination view controller
+                if let destinationVC = segue.destination as? SubmitInfoVC {
+                    // Pass the information to the destination view controller
+                    destinationVC.createdManitoCount = nameList.count
+                }
+            }
+        }
     
 
 }

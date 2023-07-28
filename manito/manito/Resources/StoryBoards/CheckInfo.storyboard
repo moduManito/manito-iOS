@@ -206,6 +206,9 @@
                                                         </constraints>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" image="SubmitButtonImageV2"/>
+                                                        <connections>
+                                                            <action selector="submitButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="s7j-v3-aUz"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -253,11 +256,22 @@
                         <outlet property="infoStackView" destination="x9I-u7-CpG" id="3Wt-dT-wxJ"/>
                         <outlet property="infoView" destination="aqF-Ts-lzf" id="6OS-Mf-lxV"/>
                         <outlet property="publicDatePicker" destination="fnX-hH-hST" id="nYI-BR-NTK"/>
+                        <segue destination="WVz-rC-uu9" kind="show" identifier="ShowSubmitInfo" id="PAW-id-VSO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-5.7971014492753632" y="-27.455357142857142"/>
+        </scene>
+        <!--SubmitInfoVC-->
+        <scene sceneID="fiF-Xw-1xf">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SubmitInfo" referencedIdentifier="SubmitInfoVC" id="WVz-rC-uu9" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="TJe-lb-V89"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="p5R-ne-Lq9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="673" y="-27"/>
         </scene>
     </scenes>
     <designables>
