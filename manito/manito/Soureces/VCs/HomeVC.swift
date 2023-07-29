@@ -48,6 +48,9 @@ class HomeVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("Click Cell Number: \(indexPath.row)")
+        // Assuming you have a reference to the selected cell, you can use it as the sender.
+        let selectedCell = tableView.cellForRow(at: indexPath)
+        performSegue(withIdentifier: "ShowMyManitoDetail", sender: selectedCell)
     }
     
 
