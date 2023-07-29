@@ -1,19 +1,18 @@
 //
-//  InputMailInfoVC.swift
+//  InputTogetherInfoVC.swift
 //  manito
 //
-//  Created by 우진 on 2023/07/18.
+//  Created by 우진 on 2023/07/28.
 //
 
 import UIKit
 
-class InputMailInfoVC: UIViewController {
+class InputTogetherInfoVC: UIViewController {
 
     // IBOutlet
     @IBOutlet weak var meetingNameTextField: PaddingTextField!
     @IBOutlet weak var emailDataTextField: PaddingTextField!
     @IBOutlet weak var nameDataTextField: PaddingTextField!
-    @IBOutlet weak var publicDatePicker: UIDatePicker!
     @IBOutlet weak var giftAmountTextField: PaddingTextField!
     
     // IBAction
@@ -53,8 +52,6 @@ class InputMailInfoVC: UIViewController {
     }
     
     private func updateUI() {
-        // DatePicker 중앙으로 정렬
-        publicDatePicker.contentHorizontalAlignment = .center
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -65,7 +62,7 @@ class InputMailInfoVC: UIViewController {
                     destinationVC.meetingName = meetingNameTextField.text
                     destinationVC.emailData = emailDataTextField.text
                     destinationVC.nameData = nameDataTextField.text
-                    destinationVC.publicDate = publicDatePicker.date
+                    destinationVC.publicDate = nil
                     destinationVC.giftAmount = giftAmountTextField.text
                 }
             }

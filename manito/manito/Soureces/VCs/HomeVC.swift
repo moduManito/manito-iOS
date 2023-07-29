@@ -9,6 +9,7 @@ import UIKit
 
 class HomeVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+    // IBOutlet
     @IBOutlet weak var myManitoTableView: UITableView!
     
     override func viewDidLoad() {
@@ -19,8 +20,13 @@ class HomeVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     }
     
+    // IBAction
     @IBAction func typeSelectButton(_ sender: UIButton) {
         performSegue(withIdentifier: "ShowTypeSelect", sender: sender)
+    }
+    
+    @IBAction func loginBarButton(_ sender: Any) {
+        performSegue(withIdentifier: "ShowLogin", sender: sender)
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -42,6 +48,9 @@ class HomeVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("Click Cell Number: \(indexPath.row)")
+        // Assuming you have a reference to the selected cell, you can use it as the sender.
+        let selectedCell = tableView.cellForRow(at: indexPath)
+        performSegue(withIdentifier: "ShowMyManitoDetail", sender: selectedCell)
     }
     
 

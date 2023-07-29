@@ -28,10 +28,15 @@ class CheckInfoVC: UIViewController {
     @IBOutlet weak var infoStackView: UIStackView!
     @IBOutlet weak var publicDatePicker: UIDatePicker!
     @IBOutlet weak var giftAmountTextField: PaddingTextField!
+    @IBOutlet weak var publicStackView: UIStackView!
     
     // IBAction
     @IBAction func editButton(_ sender: UIButton) {
         self.navigationController?.popViewController(animated: true)
+    }
+    
+    @IBAction func submitButton(_ sender: Any) {
+        performSegue(withIdentifier: "ShowSubmitInfo", sender: sender)
     }
     
     override func viewDidLoad() {
@@ -57,7 +62,15 @@ class CheckInfoVC: UIViewController {
         publicDatePicker.contentHorizontalAlignment = .center
         
         // 공개 날짜 세팅
-        publicDatePicker.date = publicDate!
+//        publicDatePicker.date = publicDate!
+        if let date = publicDate {
+            // If publicDate is not nil, show the stackView
+            publicStackView.isHidden = false
+            publicDatePicker.date = date
+        } else {
+            // If publicDate is nil, hide the stackView
+            publicStackView.isHidden = true
+        }
         
         // 선물 금액 세팅
         // 3자리 마다 ','를 붙임
@@ -77,6 +90,16 @@ class CheckInfoVC: UIViewController {
             }
         }
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+            if segue.identifier == "ShowSubmitInfo" {
+                // Get a reference to the destination view controller
+                if let destinationVC = segue.destination as? SubmitInfoVC {
+                    // Pass the information to the destination view controller
+                    destinationVC.createdManitoCount = nameList.count
+                }
+            }
+        }
     
 
 }

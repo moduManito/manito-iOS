@@ -18,5 +18,8 @@ class TypeSelectVC: UIViewController {
         performSegue(withIdentifier: "ShowInputMail", sender: sender)
     }
     
-
+    @IBAction func togetherMatchingButton(_ sender: Any) {
+        performSegue(withIdentifier: "ShowInputTogether", sender: sender)
+    }
+    
 }
