@@ -31,7 +31,6 @@ class MyMnitoDetailVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         updateUI()
-        // Do any additional setup after loading the view.
     }
     
 
@@ -49,6 +48,7 @@ class MyMnitoDetailVC: UIViewController {
             infoStackView.addArrangedSubview(personInfo)
         }
         
+        // infoStackView에 블러 효과 적용
         applyBlurEffectToStackView(stackView: infoStackView)
         
     }

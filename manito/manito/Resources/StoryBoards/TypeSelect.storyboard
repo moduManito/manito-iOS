@@ -31,22 +31,22 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8GC-E2-Zp2">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MatchingProgressBarImage1V1" translatesAutoresizingMaskIntoConstraints="NO" id="h5N-F5-tC3">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MatchingProgressBarImage1V2" translatesAutoresizingMaskIntoConstraints="NO" id="h5N-F5-tC3">
                                                 <rect key="frame" x="47.5" y="20" width="319" height="35"/>
                                             </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Heart3dImageV1" translatesAutoresizingMaskIntoConstraints="NO" id="mUU-2V-HOp">
-                                                <rect key="frame" x="72" y="85" width="270" height="270"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Plant3dImageV2" translatesAutoresizingMaskIntoConstraints="NO" id="mUU-2V-HOp">
+                                                <rect key="frame" x="106.5" y="85" width="201" height="275"/>
                                             </imageView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Heart3dImageShadowImageV1" translatesAutoresizingMaskIntoConstraints="NO" id="EET-8e-Rb7">
-                                                <rect key="frame" x="114.5" y="362" width="185" height="24"/>
+                                                <rect key="frame" x="114.5" y="367" width="185" height="24"/>
                                             </imageView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="pSv-Qg-rYU">
-                                                <rect key="frame" x="36" y="416" width="214" height="158.5"/>
+                                                <rect key="frame" x="36" y="421" width="214" height="158.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="두근 두근" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rJc-xF-qxy">
                                                         <rect key="frame" x="0.0" y="0.0" width="214" height="57.5"/>
                                                         <fontDescription key="fontDescription" name="Pretendard-Bold" family="Pretendard" pointSize="48"/>
-                                                        <color key="textColor" red="0.75294117650000003" green="0.18039215689999999" blue="0.12941176469999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <color key="textColor" red="0.38431372549019605" green="0.47450980392156861" blue="0.058823529411764705" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="마니또" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SOs-WC-CQx">
@@ -64,7 +64,7 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="UZD-5N-zVz">
-                                                <rect key="frame" x="27" y="598.5" width="360" height="71"/>
+                                                <rect key="frame" x="27" y="603.5" width="360" height="71"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R8c-9i-O7N">
                                                         <rect key="frame" x="0.0" y="0.0" width="176" height="71"/>
@@ -73,7 +73,7 @@
                                                         </constraints>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal" image="MatchingMailButtonImage"/>
-                                                        <buttonConfiguration key="configuration" style="plain" image="MatchingMailButtonImageV1"/>
+                                                        <buttonConfiguration key="configuration" style="plain" image="MatchingMailButtonImageV2"/>
                                                         <connections>
                                                             <action selector="mailMatchingButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="0BD-D9-dmi"/>
                                                         </connections>
@@ -84,7 +84,7 @@
                                                             <constraint firstAttribute="width" constant="176" id="TZO-FA-XNe"/>
                                                         </constraints>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain" image="MatchingWithButtionImageV1"/>
+                                                        <buttonConfiguration key="configuration" style="plain" image="MatchingWithButtionImageV2"/>
                                                         <connections>
                                                             <action selector="togetherMatchingButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="LbG-9N-pny"/>
                                                         </connections>
@@ -92,7 +92,7 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="ZHb-so-6qS">
-                                                <rect key="frame" x="28" y="693.5" width="358" height="58"/>
+                                                <rect key="frame" x="28" y="698.5" width="358" height="58"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="메일로 받아볼 시 지정한 공개일에 마니또와 마로의 관계가 메일로 발송됩니다." textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="67Q-th-1vz">
                                                         <rect key="frame" x="0.0" y="0.0" width="358" height="36"/>
@@ -179,11 +179,11 @@
     </scenes>
     <resources>
         <image name="Heart3dImageShadowImageV1" width="185" height="24"/>
-        <image name="Heart3dImageV1" width="270" height="270"/>
         <image name="MatchingMailButtonImage" width="169" height="57"/>
-        <image name="MatchingMailButtonImageV1" width="169" height="57"/>
-        <image name="MatchingProgressBarImage1V1" width="319" height="35"/>
-        <image name="MatchingWithButtionImageV1" width="169" height="57"/>
+        <image name="MatchingMailButtonImageV2" width="169" height="57"/>
+        <image name="MatchingProgressBarImage1V2" width="319" height="35"/>
+        <image name="MatchingWithButtionImageV2" width="169" height="57"/>
+        <image name="Plant3dImageV2" width="201" height="275"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
